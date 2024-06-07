@@ -1,0 +1,39 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3{
+    text-align: center;
+}
+#para1{
+    background-color: aqua;
+    color:  red;
+}
+  
+para1,para2,para3{
+    color: blue;
+}
+  
+div>p{
+    background-color: yellow;
+}
+  
+div+p{  /*adjacent Sibling selector(only one)*/
+    background-color: green;
+}
+  
+h3~h4{  /*adjacent Sibling selector(All)*/
+    background-color: rgba(252, 0, 210, 0.537);
+}
+  
+#hov:hover{
+    background-color: rgb(0, 200, 239);
+    color: white;
+}
+  
+#hov::first-letter{
+    color: rgb(0, 17, 255);
+}
+  
+a[target]{
+    color: cyan;
+}
