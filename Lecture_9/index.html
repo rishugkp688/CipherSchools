@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+</head>
+
+<body>
+    <main>
+        <h1 onclick="changeText(this)">My Page Title</h1>
+        
+        <button  onclick="displayDate()" >Time is</button>
+        <p id="demo"></p>
+
+        <button onclick="upperCase()">upperCase</button>
+        <p id="demo1"></p>
+
+        <div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color: red; width: 100px; height:100px;">This is div</div>
+
+                
+    </main>
+    <script>
+
+
+        function changeText(e){
+            e.innerHTML = 'Hello world'
+        }
+        function displayDate(){ 
+            document.getElementById("demo").innerText = new Date();                                                                         
+        }
+        
+        function upperCase(){ 
+            document.getElementById("demo1").innerText = "Hello world".toUpperCase();                                                                         
+        }
+
+        function mOver(e){
+            e.innerText = "Mouse over"
+        }
+
+        function mOut(e){
+            e.innerText = "Mouse out"
+        }
+
+        
+        
+    </script>
+</body>
+
+
+</html>
