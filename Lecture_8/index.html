@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta chaset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Traversal</title>
+</head>
+
+<body>
+    <main>
+        <h1>My Page Title</h1>
+        <p>Nice caption goes here</p>
+
+        <article class="first_article">
+            <h2>List of amazing fruits</h2>
+            <p>Must eat fruits</p>
+
+            <div class="wrapper-1">
+                <ul class="apple-list">
+                    <li class="apple">Apples</li>
+                    <li class="orange">Orange</li>
+                    <li class="avocado">Avacado</li>
+                    <li class="grapes">
+                        Grapes
+                        <ul>
+                            <li class="type-1">Moon drops</li>
+                            <li>Sultana</li>
+                            <li>Concord</li>
+                            <li>Crimson Seedless</li>
+                        </ul>
+                    </li>
+                    <li class="banana">Bananas</li>
+                </ul>
+
+                <button class="btn-1">Read full list</button>
+            </div>
+            <h2>List of amazing fruits</h2>
+            
+            <h2>Amazing palces in Kenya</h2>
+
+             
+            <div class="wrapper-1">..</div>
+            
+            <div class="wrapper-1">..</div>
+            
+            <main>...</main>
+            
+            <button class="btn-1">Read full List</button>
+            
+            <script>
+
+                const btn1 = document.querySelector(".btn-1")
+                btn1.closest("main")
+
+                appleList.parentNode
+
+                document.querySelector(".orange").innerHTML
+            
+                const appleList = document.querySelector(".appleList")
+
+                appleList.children
+            
+                appleList.childNodes
+            
+                appleLlist.firstChild
+            
+                appleList.lastChild
+            
+                appleList.parentElement
+
+                const seconHeading = headings[1]
+
+                const heading = document.querySelectorAll("h2");
+
+                const firstHeading = headings[0];
+
+                const orange = document.querySelector(".orange");
+                const apple = orange.previousElemnentSibling;
+                const avocado = orange.nextElementSibling;
+            </script>
+            <li class="apple">..</li>
+            <li class="avocado">..</li>
+    </main>
+</body>
+
+</html>
